@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*展开和收起用一个div,也可以说它是个按钮,假设它的id=d1;
+    假设需要显示和隐藏的div叫d2;
+    下面这段代码只是粗略的实现了你的要求,主要是给你提供个思路;
+    */
+    $(function(){
+        $('#d1').click(function(){//给d1绑定一个点击事件;
+
+            /*这个判断的意义是,如果d2是隐藏的,那么让它显示出来,并将d1的文本内容替换成收起,
+            如果是显示的,那么就隐藏它并将d1的文本内容替换为展开;*/
+            if($('#d2').is(':hidden'))
+            {
+                $('#d2').slideDown('slow');
+                $(this).text('收起');
+            }else{
+                $('#d2').slideUp('slow');
+                $(this).text('展开');
+            }
+
+            /*这是一个很简单的事件处理,如果还需要跟上图片的变换,就在判断的对应位置写入图片或者背景变换的代码,*/
+        });
+    });
+</script>
+<div id='d1'><button>展开</button></div>
+<div id='d2' style=" display:none">内容</div>
+</body>
+</html>
