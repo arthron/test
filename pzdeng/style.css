@@ -50,6 +50,45 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, pre, a, big, cite, code, 
 .r-main {
     width: 100%;
 }
+.r-main .r-type {
+    width: 830px;
+    height: 140px;
+    position: absolute;
+    margin-top: 77px;
+    margin-left: 185px;
+}
+.r-main  h1 {
+    font-size: 34px;
+    letter-spacing: 20px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: normal;
+}
+.r-main .r-type p{
+    font-family: "Microsoft YaHei UI";
+    font-size: 16px;
+}
+.r-main .i-type {
+    width: 1040px;
+    height: 198px;
+    position: absolute;
+    margin-top: 272px;
+    margin-left: 80px;
+}
+.r-main .i-type .img{
+    position: absolute;
+    float: left;
+}
+.r-main .i-type .text{
+    width: 604px;
+    height: 173px;
+    float: right;
+    text-align: left;
+}
+.r-main .i-type p{
+    font-family: "Microsoft YaHei UI";
+    font-size: 12px;
+}
 .r-main .r-level {
     width: 100%;
     height: 350px;
@@ -61,6 +100,43 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, pre, a, big, cite, code, 
 .r-main .r-level-bg {
     width: 100%;
     height: 570px;
+}
+.r-main .r-level-news {
+    width: 100%;
+    height: 812px;
+}
+.r-main .r-level-news .r-type{
+    width: 830px;
+    height: 34px;
+    position: absolute;
+    margin-top: 77px;
+    margin-left: 545px;
+}
+.r-main .r-level-news .img-box {
+    width: 1292px;
+    height: 404px;
+    position: absolute;
+    margin-top: 171px;
+    margin-left: 16.5%;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+.r-main .r-level-news .img-box {
+    font-family: "Microsoft YaHei UI";
+    font-size: 15px;
+}
+.news-button{
+    width: 100%;
+    position: absolute;
+    margin-top: 544px;
+    text-align: center;
+}
+.join-img {
+    width: 1903px;
+    position: absolute;
+    text-align: center;
+    margin-top: 621px;
 }
 .lay-model {
     border-bottom: 1px solid #e9e9e9;
@@ -111,6 +187,11 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, pre, a, big, cite, code, 
     max-width: 1200px;
     width: 85%;
 }
+.rela {
+    height: 100%;
+    position: relative;
+    text-align: center
+}
 ul::after, dl::after, .wrap::after, .wrap-box::after {
     content: "";
     display: block;
@@ -140,7 +221,5 @@ p {
 h1, h2, h3, h4, h5, h6, button, input, select, textarea {
     font-size: 100%;
     font-weight: normal;
-}
-h1 {
     font-family: "Microsoft YaHei UI";
 }
